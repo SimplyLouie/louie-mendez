@@ -4,24 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Primary Meta Tags -->
   <title>Louie Mendez | FullStack Web Developer</title>
   <meta name="title" content="Louie Mendez | FullStack Web Developer" />
-  <meta name="description" content="I design and build hand-crafted, high-performance websites. Custom web development based in Cebu, Philippines." />
+  <meta name="description"
+    content="I design and build hand-crafted, high-performance websites. Custom web development based in Cebu, Philippines." />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://github.com/SimplyLouie" />
+  <meta property="og:url" content="https://github.com/louie-mendez" />
   <meta property="og:title" content="Louie Mendez | FullStack Web Developer" />
-  <meta property="og:description" content="I design and build hand-crafted, high-performance websites. Custom web development based in Cebu, Philippines." />
+  <meta property="og:description"
+    content="I design and build hand-crafted, high-performance websites. Custom web development based in Cebu, Philippines." />
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/254399754?v=4" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://github.com/SimplyLouie" />
+  <meta property="twitter:url" content="https://github.com/louie-mendez" />
   <meta property="twitter:title" content="Louie Mendez | FullStack Web Developer" />
-  <meta property="twitter:description" content="I design and build hand-crafted, high-performance websites. Custom web development based in Cebu, Philippines." />
+  <meta property="twitter:description"
+    content="I design and build hand-crafted, high-performance websites. Custom web development based in Cebu, Philippines." />
   <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/254399754?v=4" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -316,21 +319,19 @@
       background: var(--surface2);
       /* The glowing gradient will be applied as a pseudo-element */
     }
-    
+
     .avatar-ring::before {
       content: '';
       position: absolute;
       inset: 0;
       border-radius: 50%;
-      background: radial-gradient(
-        80px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
-        rgba(88, 166, 255, 0.8),
-        transparent 40%
-      );
+      background: radial-gradient(80px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+          rgba(88, 166, 255, 0.8),
+          transparent 40%);
       opacity: 0;
       transition: opacity 0.3s;
     }
-    
+
     .avatar-wrapper:hover .avatar-ring::before {
       opacity: 1;
     }
@@ -1205,28 +1206,42 @@
       transition: all 0.3s ease;
       cursor: pointer;
     }
+
     .mockup-item:hover {
       filter: brightness(1.2);
       transform: translateY(-2px);
     }
+
     .mockup-card {
       transition: all 0.3s ease;
       cursor: pointer;
     }
+
     .mockup-card:hover {
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
       transform: translateY(-3px) scale(1.02);
     }
+
     .mockup-pulse {
       animation: pulse-op 2s infinite ease-in-out;
     }
+
     @keyframes pulse-op {
-      0%, 100% { opacity: 0.8; }
-      50% { opacity: 1; }
+
+      0%,
+      100% {
+        opacity: 0.8;
+      }
+
+      50% {
+        opacity: 1;
+      }
     }
+
     .mockup-bar {
       transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
     }
+
     .mockup-card:hover .mockup-bar {
       width: 100% !important;
     }
@@ -1354,9 +1369,14 @@
         <div class="section-line"></div>
       </div>
       <div class="about-card">
-        Look, anyone can spin up a quick template or ask a chatbot to spit out some generic code nowadays. But if you want a website, you probably want something that actually works, stands out, and doesn't break when you look at it funny.
+        Look, anyone can spin up a quick template or ask a chatbot to spit out some generic code nowadays. But if you
+        want a website, you probably want something that actually works, stands out, and doesn't break when you look at
+        it funny.
         <br><br>
-        I don't just "build websites." I write the actual code by hand. That means your site won't be bloated with a dozen plugins you don't need. It's going to load incredibly fast, look exactly the way we design it, and be built secure from day one. No cookie-cutter layouts. Just hand-crafted, modern web development that gets the job done.
+        I don't just "build websites." I write the actual code by hand. That means your site won't be bloated with a
+        dozen plugins you don't need. It's going to load incredibly fast, look exactly the way we design it, and be
+        built secure from day one. No cookie-cutter layouts. Just hand-crafted, modern web development that gets the job
+        done.
         <div class="about-meta stagger">
           <div class="meta-item"><span>📍</span><span>Cebu, Philippines</span></div>
           <div class="meta-item"><span>💻</span><span>Hand-coded, custom development</span></div>
@@ -1585,8 +1605,8 @@
     ════════════════════════════════════════ */
     const avatarWrapper = document.querySelector('.avatar-wrapper');
     const avatarRing = document.querySelector('.avatar-ring');
-    
-    if(avatarWrapper && avatarRing) {
+
+    if (avatarWrapper && avatarRing) {
       avatarWrapper.addEventListener('mousemove', (e) => {
         const rect = avatarWrapper.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -1750,7 +1770,8 @@
       lineObs.observe(l);
     });
 
-    </script>
+  </script>
 
-    </body>
-    </html>
+</body>
+
+</html>
